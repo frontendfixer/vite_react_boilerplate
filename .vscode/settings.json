@@ -1,0 +1,92 @@
+{
+  // Workbench Themes
+  "workbench.colorTheme": "Dracula Dark+",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.files.color": "#1dfafa",
+  "material-icon-theme.folders.color": "#1ddada",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#0e1316",
+    "statusBar.foreground": "#f9f9ff",
+    "statusBar.border": "#15181b",
+    "statusBarItem.errorBackground": "#ff5e5e",
+    "statusBarItem.errorForeground": "#212128",
+    "statusBarItem.warningBackground": "#ff5e5e",
+    "statusBarItem.warningForeground": "#212128",
+    "statusBarItem.activeBackground": "#5fff87",
+    "statusBarItem.hoverBackground": "#2c8ad6"
+  },
+
+  // Editor Settings
+  "editor.fontFamily": "'Cascadia Code', 'FiraCode Nerd Font'",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "300",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.foldingStrategy": "indentation",
+  "editor.guides.bracketPairs": "active",
+  "editor.mouseWheelZoom": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  "explorer.confirmDelete": true,
+
+  // Ignores
+  "html.hover.references": false,
+  "css.hover.references": false,
+  "html.hover.documentation": false,
+  "css.hover.documentation": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // ============ Emmit Config ===========
+  "emmet.includeLanguages": {
+    "html": "html",
+    "css": "css",
+    "plaintext": "pug",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.preferences": {
+    "css.color.short": true
+  },
+  // "emmet.useInlineCompletions": true,
+  // "emmet.triggerExpansionOnTab": true,
+  "html.format.contentUnformatted": "pre,code,textarea",
+  "editor.snippetSuggestions": "top",
+
+  // =================== Prettierr ===============
+  "prettier.configPath": ".prettierrc",
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "vs-code-prettier-eslint.prettierLast": "true", // set as "true" to run 'prettier' last not first
+
+  // ============= Intellisence=============
+  // Path Intellisense
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.autoTriggerNextSuggestion": true,
+  "path-intellisense.showHiddenFiles": true,
+  "path-intellisense.extensionOnImport": false,
+  "path-intellisense.mappings": {
+    "/": "${workspaceFolder}"
+  },
+  // NPM Intellisense
+  "npm-intellisense.scanDevDependencies": true,
+
+  // Language Settings
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "on",
+      "strings": "on"
+    }
+  }
+}
