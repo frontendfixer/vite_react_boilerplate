@@ -8,5 +8,6 @@
   "tabWidth": 2,
   "bracketSameLine": false,
   "bracketSpacing": true,
-  "jsxSingleQuote": false
+  "jsxSingleQuote": false,
+  "plugins": ["./node_modules/prettier-plugin-tailwindcss"]
 }
