@@ -18,6 +18,11 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  "emmet.useInlineCompletions": true
-  // "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "emmet.syntaxProfiles": {
+    "jsx": {
+      "attr_quotes": "double"
+    }
+  },
+  "emmet.triggerExpansionOnTab": true
 }
