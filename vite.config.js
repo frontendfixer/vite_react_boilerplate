@@ -13,6 +13,7 @@ export default defineConfig({
     open: true,
   },
   build: {
+    minify: 'terser',
     cssCodeSplit: true,
     cssMinify: true,
     sourcemap: true,
