@@ -8,8 +8,8 @@
     "preview": "vite preview",
     "lint:eslint": "eslint . --ext .js,.jsx",
     "fix:eslint": "eslint --fix  . --ext .js,.jsx",
-    "lint:stylelint": "stylelint **/*.{css,scss,jsx}",
-    "fix:stylelint": "stylelint --fix  ./src/**/*.{css, scss,jsx}"
+    "lint:stylelint": "stylelint ./src/**/*.{css,scss,jsx}",
+    "fix:stylelint": "stylelint --fix  ./src/**/*.{css,scss,jsx}"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -39,8 +39,8 @@ picture,
 video,
 canvas,
 svg {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -60,9 +60,9 @@ select {
   *,
   *::before,
   *::after {
+    transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }

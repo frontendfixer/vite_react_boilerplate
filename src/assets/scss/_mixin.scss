@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-//========== Mixin and Functions ============
+// ========== Mixin and Functions ============
 
 $breakpoints-min: (
   'small': 44em,
@@ -21,6 +21,7 @@ $breakpoints-max: (
   'medium': 62.99em,
   'large': 79.99em,
 ) !default;
+
 @mixin mq-max($breakpoint) {
   @if map-has-key($breakpoints-max, $breakpoint) {
     @media only screen and (max-width: map-get($breakpoints-max, $breakpoint)) {
@@ -28,6 +29,7 @@ $breakpoints-max: (
     }
   }
 }
+
 // Usage:
 
 // .selector {
@@ -50,12 +52,16 @@ $breakpoints-max: (
 }
 
 // ++++++++++++++ REM Functions +++++++++++
-$html-font-size: 16px;
-@function rem($Value) {
-  $remValue: math.div($Value, $html-font-size) + rem;
+$htmlfontSize: 16px;
+
+@function rem($value) {
+  $remValue: math.div($value, $htmlfontSize) + rem;
+
   @return $remValue;
 }
-@function em($Value) {
-  $remValue: math.div($Value, $html-font-size) + em;
+
+@function em($value) {
+  $remValue: math.div($value, $htmlfontSize) + em;
+
   @return $remValue;
 }
