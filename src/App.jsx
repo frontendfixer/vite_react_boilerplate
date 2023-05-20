@@ -1,6 +1,7 @@
-import './App.scss';
 import { ReactComponent as ReactLogo } from './assets/react.svg';
 import { ReactComponent as ViteLogo } from './assets/vite.svg';
+
+import './App.scss';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       </div>
       <h1>Vite React Boilerplate</h1>
       <span>
-        ⚙️ Created with [ <code>🔱 ESLint</code> | <code>🎀 Prettier</code> | <code>🎨 SCSS</code> |{' '}
-        <code>🔮 StyleLint</code> ]
+        ⚙️ Created with [ <code>🔱 ESLint</code> | <code>🎀 Prettier</code> |{' '}
+        <code>🎨 SCSS</code> | <code>🔮 StyleLint</code> ]
       </span>
     </>
   );

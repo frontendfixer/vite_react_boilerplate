@@ -25,7 +25,7 @@
         "extensions": [".js", ".jsx"]
       }
     ],
-    "prettier/prettier": "warn",
+    "prettier/prettier": "error",
     "unused-imports/no-unused-vars": [
       "warn",
       {
@@ -42,9 +42,17 @@
       "rules": {
         "react/prop-types": "off",
         "import/order": [
-          "warn",
+          "error",
           {
-            "groups": ["builtin", "external", "internal", ["parent", "sibling"], "index", "object", "type"],
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              ["parent", "sibling"],
+              "index",
+              "object",
+              "type"
+            ],
             "pathGroups": [
               {
                 "pattern": "./**/**\\.{css,scss}",
