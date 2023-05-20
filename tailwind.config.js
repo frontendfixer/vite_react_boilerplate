@@ -3,7 +3,12 @@
 // import colors from 'tailwindcss/colors';
 
 export default {
-  content: ['./src/components/**/*.jsx', './src/pages/**/*.jsx', './src/**/*.jsx', './src/index.html'],
+  content: [
+    './src/components/**/*.jsx',
+    './src/pages/**/*.jsx',
+    './src/**/*.jsx',
+    './src/index.html',
+  ],
   theme: {
     screens: {
       sm: '375px',
