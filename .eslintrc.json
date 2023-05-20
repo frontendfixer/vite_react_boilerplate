@@ -1,24 +1,40 @@
 {
-  "root": true,
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
-  "plugins": ["react", "jsx-a11y", "import", "unused-imports"],
+  "env": { "browser": true, "es2020": true },
   "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
     "airbnb",
     "airbnb/hooks",
-    "plugin:import/recommended",
-    "plugin:jsx-a11y/recommended",
-    "prettier"
+    "prettier",
+    "plugin:prettier/recommended"
   ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+  "plugins": ["react-refresh", "jsx-a11y", "prettier", "unused-imports"],
+  "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
+  "settings": { "react": { "version": "18.2" } },
+
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/button-has-type": "off",
+    "react-refresh/only-export-components": "warn",
+    "semi": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "prettier/prettier": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
   },
   "overrides": [
     {
@@ -26,7 +42,7 @@
       "rules": {
         "react/prop-types": "off",
         "import/order": [
-          "error",
+          "warn",
           {
             "groups": [
               "builtin",
@@ -39,7 +55,7 @@
             ],
             "pathGroups": [
               {
-                "pattern": "./**/**\\.css",
+                "pattern": "./**/**\\.{css,scss}",
                 "group": "type",
                 "position": "after"
               }
@@ -55,17 +71,5 @@
         ]
       }
     }
-  ],
-  "rules": {
-    "react/jsx-props-no-spreading": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "jsx-a11y/label-has-associated-control": "warn",
-    "jsx-a11y/no-noninteractive-element-interactions": "warn",
-    "jsx-quotes": ["error", "prefer-double"],
-    "no-unused-vars": "warn",
-    "react/function-component-definition": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "warn",
-    "semi": "error"
-  }
+  ]
 }
