@@ -1,7 +1,20 @@
 {
   "name": "vite-react-boilerplate",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.1",
+  "description": "React Boilerplate using Vite , Prettier, Eslint, Stylelint, and SASS ",
+  "keywords": [
+    "react",
+    "vite",
+    "react template",
+    "vite react template",
+    "javascript",
+    "typescript",
+    "config"
+  ],
+  "main": "index.html",
+  "repository": "git@github.com:frontendfixer/vite_react_boilerplate.git",
+  "author": "Lakshmikanta <frontendfixer@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -33,7 +46,6 @@
     "postcss-scss": "^4.0.6",
     "prettier": "^2.8.7",
     "sass": "^1.62.0",
-    "sharp": "^0.32.0",
     "stylelint": "^15.6.0",
     "stylelint-color-format": "^1.1.0",
     "stylelint-config-recess-order": "^4.0.0",
