@@ -16,9 +16,6 @@
   "author": "Lakshmikanta <frontendfixer@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
