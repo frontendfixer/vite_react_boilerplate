@@ -16,6 +16,9 @@
   "author": "Lakshmikanta <frontendfixer@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
@@ -24,7 +27,8 @@
     "fix:eslint": "eslint --fix  . --ext .js,.jsx",
     "lint:stylelint": "stylelint ./src/**/*.{css,scss,jsx}",
     "fix:stylelint": "stylelint --fix  ./src/**/*.{css,scss,jsx}",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "release": "changeset publish"
   },
   "dependencies": {
     "react": "^18.2.0",
