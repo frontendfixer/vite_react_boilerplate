@@ -1,6 +1,6 @@
 {
   "name": "@frontendfixer/vite-react-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Boilerplate using Vite , Prettier, Eslint, Stylelint, and SASS ",
   "keywords": [
     "react",
