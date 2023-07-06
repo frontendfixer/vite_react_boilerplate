@@ -1,7 +1,7 @@
+import './App.scss';
+
 import { ReactComponent as ReactLogo } from './assets/react.svg';
 import { ReactComponent as ViteLogo } from './assets/vite.svg';
-
-import './App.scss';
 
 function App() {
   return (
